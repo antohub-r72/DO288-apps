@@ -16,7 +16,7 @@ cp -Rf /tmp/src/*.html ./
 #DATE=`date "+%b %d, %Y @ %H:%M %p"`
 #DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
-DATE = 'date'
+DATE = `date +"%m-%d-%y"`
 
 echo "---> Creating info page"
 echo "$DATE" >> ./info.html
