@@ -14,10 +14,12 @@ echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
 #DATE=`date "+%b %d, %Y @ %H:%M %p"`
-DATE=$(date '+%Y-%m-%d %H:%M:%S')
+#DATE=$(date '+%Y-%m-%d %H:%M:%S')
+
+DATE = 'date -I'
 
 echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
+echo "$DATE" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 echo "Astlave vista" >> ./index.html
