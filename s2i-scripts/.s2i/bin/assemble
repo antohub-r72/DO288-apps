@@ -15,7 +15,9 @@ cp -Rf /tmp/src/*.html ./
 
 #DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
-DATE='date -I'
+DATE='date'
+cp /dev/null index.html
+
 echo "Amor vincit omani" >> index.html
 echo "---> Creating info page"
 echo "Page built on $DATE" >> ./info.html
